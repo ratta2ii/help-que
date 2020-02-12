@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 function Ticket(props) {
   return (
     <div>
-      {/* For LOCALLY scoped just omit the global keyword. */}
+      {/* For LOCALLY scoped just omit the global keyword.
       <style global jsx>{`
           div {
             background-color: red;
           }
-        `}</style>
+        `}</style> */}
       <h3>{props.location} - {props.names}</h3>
       <p><em>{props.issue}</em></p>
       <hr />

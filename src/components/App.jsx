@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import Header from './Header';
 import TicketList from './TicketList';
 import NewTicketForm from './NewTicketForm';
+import GridTest from './GridTest';
+import Test from './Test';
 
 function App(){
   return (
@@ -13,6 +15,8 @@ function App(){
       <Switch>
         <Route exact path='/' component={TicketList} />
         <Route path='/newticket' component={NewTicketForm} />
+        <Route path='/gridtest' component={GridTest} />
+        <Route path='/test' component={Test} />
       </Switch>
     </div>
   );

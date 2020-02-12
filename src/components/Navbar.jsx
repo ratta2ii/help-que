@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -42,9 +43,9 @@ export default function Navbar() {
   return (
     <div style={navContainer}>
       <ul>
-        <a href="#"><li style={listElements} >Home</li></a>
-        <a href="#"><li style={listElements}>Notifications</li></a>
-        <a href="#"><li style={listElements}>Messages</li></a>
+        <Link to="/"><li style={listElements} >Home</li></Link> 
+        <Link to="/newticket"><li style={listElements} >Create Ticket</li></Link> 
+        <Link to="/test"><li style={listElements} >Grid Test</li></Link> 
       </ul>
       <input
           type='text'

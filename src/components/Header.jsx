@@ -11,7 +11,7 @@ function Header() {
   return (
     <div>
       <h1 style={headerStyles} >Help Queue</h1>
-      <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
+      <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link> | <Link to="/test">Test</Link> 
     </div>
   );
 }
