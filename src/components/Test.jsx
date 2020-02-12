@@ -1,4 +1,6 @@
 import React from 'react';
+import cool from '../assets/images/cool.jpeg';
+import homer from '../assets/images/homer.png';
 
 export default function Test2() {
 
@@ -27,6 +29,7 @@ export default function Test2() {
         backgroundColor: '#E15554',
         padding: '20px'
     }
+
     let div4 = {
         gridArea: '2 / 4 / 3 / 10',
         backgroundColor: '#3BB273',
@@ -36,7 +39,8 @@ export default function Test2() {
     let div5 = {
         gridArea: '3 / 4 / 13 / 10',
         backgroundColor: '#7768AE',
-        padding: '20px'
+        padding: '20px',
+        overflow: 'hidden'
     }
 
     let div6 = {
@@ -49,6 +53,11 @@ export default function Test2() {
         gridArea: '6 / 10 / 13 / 13',
         backgroundColor: 'style',
         padding: '20px'
+    }
+
+    let coolStyling = {
+        width: '300px',
+        height: '300px'
     }
 
 
@@ -65,10 +74,12 @@ export default function Test2() {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, molestias!</p>
             </div>
             <div style={div4}>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, molestias!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dignissimos!</p>
             </div>
             <div style={div5}>
+               <img src={homer} />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, molestias!</p>
+                <img src={cool} style={coolStyling}/>
             </div>
             <div style={div6}>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, molestias!</p>
