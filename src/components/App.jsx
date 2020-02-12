@@ -6,6 +6,8 @@ import TicketList from './TicketList';
 import NewTicketForm from './NewTicketForm';
 import GridTest from './GridTest';
 import Test from './Test';
+import Error404 from './Error404';
+
 
 function App(){
   return (
@@ -17,6 +19,7 @@ function App(){
         <Route path='/newticket' component={NewTicketForm} />
         <Route path='/gridtest' component={GridTest} />
         <Route path='/test' component={Test} />
+        <Route component={Error404} />
       </Switch>
     </div>
   );
